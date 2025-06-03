@@ -4,7 +4,7 @@ def conectar_sql_server():
     try:
         conexion = pyodbc.connect(
             'DRIVER={ODBC Driver 17 for SQL Server};'
-            'SERVER=ACER;'       # Servidor
+            'SERVER=DESKTOP-ABCAQRM;'       # Servidor
             'DATABASE=DBPortafolioCursos;' # nombre de la BD
             'Trusted_Connection=yes;'
         )
@@ -13,5 +13,4 @@ def conectar_sql_server():
     except pyodbc.Error as error:
         print("Error al conectar a la base de datos:", error)
         return None
-# ...código existente...
-
+    

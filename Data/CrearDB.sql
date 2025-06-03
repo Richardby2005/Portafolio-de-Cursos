@@ -124,7 +124,3 @@ CREATE TABLE RegistroEliminacion (
     FechaEliminacion DATE,
     FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
 );
-
--- Insertar roles por defecto
-INSERT INTO Rol (IdRol, NombreRol) VALUES (1, 'Docente');
-INSERT INTO Rol (IdRol, NombreRol) VALUES (2, 'Administrador');
